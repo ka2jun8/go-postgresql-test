@@ -1,6 +1,6 @@
 
 -- +migrate Up
-CREATE TABLE salary (id int);
+CREATE TABLE IF NOT EXISTS  salary (id int);
 
 -- +migrate Down
-DROP TABLE salary;
+DROP TABLE IF EXISTS salary;
